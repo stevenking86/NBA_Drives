@@ -24,13 +24,14 @@
 // dvs_tot = drives total = 472
 
 var playerDrivesParser = function(players) {
-  players = []
+  var players_drives = []
   for(var i = 0; i < players.length; i ++ ){
-    players.push(playerMaker(i))
+    players_drives.push(new drive_player(players[i]))
   }
+  return players_drives
 }
 
-function playerMaker(entry) {
+function drive_player(entry) {
   //this.player_id = entry[0]
   this.name = entry[1]
   this.first_name = entry[2]
