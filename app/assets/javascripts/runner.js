@@ -23,6 +23,6 @@ $(document).ready(function() {
       });
   });
   for(var x=0; x < players.length; x++){
-    $('#player_dropdown').append("<a href='#'>" + players[x].name + "</a>")
+    $('#player_dropdown').append(" <a href='#'>" + players[x].name + "</a> |")
   }
 })
