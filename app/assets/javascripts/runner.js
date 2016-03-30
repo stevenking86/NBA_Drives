@@ -1,5 +1,6 @@
 $(document).ready(function() {
   var players = playerDrivesParser(drivesData.resultSets[0].rowSet)
+  updatePlayerAttributes(players[0])
   $(function () {
       $('#points_container').highcharts({
           chart: {
