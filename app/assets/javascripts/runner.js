@@ -8,14 +8,21 @@ $(document).ready(function() {
               backgroundColor:'transparent'
           },
           title: {
+            style: {
+              color: "#FFF"
+            },
               text: 'Points From Drives'
           },
           xAxis: {
-              categories: ['per game', 'per 48 mins']
+              categories:
+              ['per game', 'per 48 mins']
           },
           yAxis: {
-              title: {
-                  text: 'Points'
+            title: {
+              style: {
+                color: "#FFF"
+            },
+            text: 'Points'
               }
           },
           series: [{
@@ -39,6 +46,9 @@ $(document).ready(function() {
                 backgroundColor:'transparent'
             },
             title: {
+              style: {
+                color: "#FFF"
+              },
                 text: 'Points From Drives'
             },
             xAxis: {
@@ -46,6 +56,9 @@ $(document).ready(function() {
             },
             yAxis: {
                 title: {
+                  style: {
+                    color: "#FFF"
+                  },
                     text: 'Points'
                 }
             },
