@@ -4,7 +4,8 @@ $(document).ready(function() {
   $(function () {
       $('#points_container').highcharts({
           chart: {
-              type: 'bar'
+              type: 'bar',
+              backgroundColor:'transparent'
           },
           title: {
               text: 'Points From Drives'
@@ -34,7 +35,8 @@ $(document).ready(function() {
         $(function() {
         $('#points_container').highcharts({
             chart: {
-                type: 'bar'
+                type: 'bar',
+                backgroundColor:'transparent'
             },
             title: {
                 text: 'Points From Drives'

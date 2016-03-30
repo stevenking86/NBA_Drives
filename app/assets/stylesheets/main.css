@@ -1,5 +1,5 @@
   #player_info {
-
+    color: white;
 }
 
  #points_container {
@@ -16,10 +16,14 @@
 
 }
 
+p {
+  color: white;
+}
 
 h1 {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
+  color: white;
 }
 
 .center {
@@ -40,9 +44,13 @@ h2 {
   position: relative;
   bottom: 12em;
   left: 8em;
-  border: 2px solid black;
+  border: 2px solid white;
 }
 
 #disclaimer {
-  font-size: .75em
+  font-size: .9em
+}
+
+body {
+  background-image: url("Basketball-Court_Landscape.jpg");
 }
