@@ -1,15 +1,15 @@
 $(document).ready(function() {
   var players = playerDrivesParser(drivesData.resultSets[0].rowSet)
   $(function () {
-      $('#container').highcharts({
+      $('#points_container').highcharts({
           chart: {
               type: 'bar'
           },
           title: {
-              text: 'Drives'
+              text: 'Points From Drives'
           },
           xAxis: {
-              categories: ['Points from drives per game', 'Points from drives per 48 mins']
+              categories: ['per game', 'per 48 mins']
           },
           yAxis: {
               title: {
@@ -30,15 +30,15 @@ $(document).ready(function() {
       var new_player = $("#player_dropdown option:selected").text()
         current_player = playerFinder(new_player, players)
         $(function() {
-        $('#container').highcharts({
+        $('#points_container').highcharts({
             chart: {
                 type: 'bar'
             },
             title: {
-                text: 'Drives'
+                text: 'Points From Drives'
             },
             xAxis: {
-                categories: ['Points from drives per game', 'Points from drives per 48 mins']
+                categories: ['per game', 'per 48 mins']
             },
             yAxis: {
                 title: {
