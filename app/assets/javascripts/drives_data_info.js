@@ -35,6 +35,14 @@ var playerDrivesParser = function(players) {
   return players_drives
 }
 
+var playerFinder = function(player_name, players) {
+    for(var p=0; p < players.length; p++){
+      if(players[p].name == player_name){
+        return players[p]
+      }
+    }
+  }
+
 function drive_player(entry) {
   //this.player_id = entry[0]
   this.name = entry[1]
@@ -51,6 +59,8 @@ function drive_player(entry) {
   this.points_from_drives_total = entry[12]
   this.total_drives = entry[13]
 }
+
+
 
 //var players = playerDrivesParser(drivesData.resultSets[0].rowSet)
 
