@@ -11,7 +11,7 @@
 #additional_stats {
   position: relative;
   display: inline-block;
-  bottom: 14em;
+  bottom: 12em;
   left: 4em;
 
 }
@@ -30,3 +30,7 @@ h2 {
   text-align: center
 }
 
+#player_name {
+  font-weight: bold;
+  font-size: 1.5em;
+}

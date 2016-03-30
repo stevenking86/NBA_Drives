@@ -1,32 +1,3 @@
-// list of addresses for raw data.
-// addressList <- list(pullup_address = "http://stats.nba.com/js/data/sportvu/pullUpShootData.js",
-//     drives_address = "http://stats.nba.com/js/data/sportvu/drivesData.js", defense_address = "http://stats.nba.com/js/data/sportvu/defenseData.js",
-//     passing_address = "http://stats.nba.com/js/data/sportvu/passingData.js",
-//     touches_address = "http://stats.nba.com/js/data/sportvu/touchesData.js",
-//     speed_address = "http://stats.nba.com/js/data/sportvu/speedData.js", rebounding_address = "http://stats.nba.com/js/data/sportvu/reboundingData.js",
-//     catchshoot_address = "http://stats.nba.com/js/data/sportvu/catchShootData.js",
-//     shooting_address = "http://stats.nba.com/js/data/sportvu/shootingData.js")
-
-//DRIVES:
-// what to get at : drivesData.resultSets[0].rowSet
-// console log each player's drive stats: drivesData.resultSets[0].rowSet.forEach(function(entry) {console.log(entry)})
-// headers: drivesData.resultSets[0].headers
-//ATTRIBUTES:
-// player id = 202391
-// player = jeremy Lin
-// first name = jeremy
-// last name = lin
-// team abbreviation = cha
-// gp = games played = 70
-// min = minutes per game = 26
-// dvs = drives per game = 6.7
-// dpp = drive points per game = 4
-// dtp = % of team's personal fouls? = 7.4
-// fg_pct = fg % on drives I assume =  .495
-// pts_48 = drives from points per 48 minutes = 7.4
-// dpp_tot = drive points total = 281
-// dvs_tot = drives total = 472
-
 var playerDrivesParser = function(players) {
   var players_drives = []
   for(var i = 0; i < players.length; i ++ ){
@@ -64,12 +35,7 @@ var updatePlayerAttributes = function(current_player){
   $("#player_name").text(current_player.name)
   $("#team_name").text(current_player.team_abrv)
   $("#drives_per_game").text("Drives Per Game: " + current_player.drives_per_game)
-  $("#fg_pct_drives").text("FG% on Drives " + (current_player.fg_pct_on_drives * 100))
-  $("#total_points_from_drives").text("Points from Drives Total " + current_player.points_from_drives_total)
+  $("#fg_pct_drives").text("FG% on Drives: " + (current_player.fg_pct_on_drives * 100) + "%")
+  $("#total_points_from_drives").text("Points from Drives Total: " + current_player.points_from_drives_total)
   // $("#total_drives").text(total_drives)
 }
-
-//var players = playerDrivesParser(drivesData.resultSets[0].rowSet)
-
-//driver code to sort players by drives per game:
-// var sorted_playas = playerz.sort(function(a,b){ return parseFloat(b.drives_per_game) - parseFloat(a.drives_per_game)})
