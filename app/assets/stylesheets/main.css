@@ -42,3 +42,7 @@ h2 {
   left: 8em;
   border: 2px solid black;
 }
+
+#disclaimer {
+  font-size: .75em
+}
