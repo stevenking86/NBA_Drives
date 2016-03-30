@@ -60,7 +60,14 @@ function drive_player(entry) {
   this.total_drives = entry[13]
 }
 
-
+var updatePlayerAttributes = function(current_player){
+  $("#player_name").text(current_player.name)
+  $("#team_name").text(current_player.team_abrv)
+  $("#drives_per_game").text("Drives Per Game: " + current_player.drives_per_game)
+  $("#fg_pct_drives").text("FG% on Drives " + (current_player.fg_pct_on_drives * 100))
+  $("#total_points_from_drives").text("Points from Drives Total " + current_player.points_from_drives_total)
+  // $("#total_drives").text(total_drives)
+}
 
 //var players = playerDrivesParser(drivesData.resultSets[0].rowSet)
 

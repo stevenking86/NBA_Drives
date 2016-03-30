@@ -29,6 +29,7 @@ $(document).ready(function() {
   $("#player_dropdown").change(function(){
       var new_player = $("#player_dropdown option:selected").text()
         current_player = playerFinder(new_player, players)
+        updatePlayerAttributes(current_player)
         $(function() {
         $('#points_container').highcharts({
             chart: {
